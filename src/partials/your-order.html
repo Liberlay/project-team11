@@ -41,30 +41,20 @@
       ></textarea>
       <button type="submit">SEND</button>
     </form>
-  </div>
-  <div>
-    <picture>
-      <source
-        srcset="
-          /src/img/your-order/mobile_2x.jpg 2x,
-          /src/img/your-order/tablet_2x.jpg 2x
-        "
-      />
-      <img
-        class="img-your-order"
-        src="/src/img/your-order/desktop_1x.jpg"
-        alt="cooking woman"
-        width="295px"
-        height="273px"
-      />
-    </picture>
-    <p class="paragraph picture-cotainer-paragraph-follow">
-      Follow us on our social networks:
-    </p>
-    <ul class="picture-cotainer-order-list">
-      <li class="picture-cotainer-order-item">instagram</li>
-      <li class="picture-cotainer-order-item">facebook</li>
-      <li class="picture-cotainer-order-item">youtube</li>
-    </ul>
+    <div class="your-order-picture-container">
+<picture class="img-your-order">
+  <source srcset="/src/img/your-order/desktop_1x.jpg 1x , /src/img/your-order/desktop_2x.jpg 2x ">
+  <source srcset="/src/img/your-order/tablet_1x.jpg 1x , /src/img/your-order/tablet_2x.jpg 2x">
+  <source srcset="/src/img/your-order/mobile_1x.jpg 1x , /src/img/your-order/mobile_2x.jpg 2x ">  
+</picture>
+      <p class="paragraph picture-cotainer-paragraph-follow">
+        Follow us on our social networks:
+      </p>
+      <ul class="picture-cotainer-order-list">
+        <li class="picture-cotainer-order-item">instagram</li>
+        <li class="picture-cotainer-order-item">facebook</li>
+        <li class="picture-cotainer-order-item">youtube</li>
+      </ul>
+    </div>
   </div>
 </section>
