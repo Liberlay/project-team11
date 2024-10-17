@@ -48,19 +48,24 @@
             /src/img/your-order/desktop_1x.jpg 1x,
             /src/img/your-order/desktop_2x.jpg 2x
           "
+          media="(min-width: 1024px)"
         />
         <source
           srcset="
             /src/img/your-order/tablet_1x.jpg 1x,
             /src/img/your-order/tablet_2x.jpg 2x
           "
+          media="(min-width: 768px)"
         />
         <source
           srcset="
             /src/img/your-order/mobile_1x.jpg 1x,
             /src/img/your-order/mobile_2x.jpg 2x
           "
+          media="(max-width: 767px)"
         />
+        <!-- Fallback изображение -->
+        <img src="/src/img/your-order/desktop_1x.jpg" alt="Your order image" />
       </picture>
       <p class="paragraph picture-cotainer-paragraph-follow">
         Follow us on our social networks:
