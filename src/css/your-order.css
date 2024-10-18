@@ -6,10 +6,22 @@
   font-weight: 600;
   font-size: 48px;
   line-height: 100%;
-  letter-spacing: -0.01em;
   text-transform: uppercase;
   color: #fbfbfb;
   margin-bottom: 20px;
+}
+
+.title-your-order-exception {
+  color: rgba(251, 251, 251, 0.3);
+}
+
+.container-your-order-paragraph {
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 14px;
+  margin-bottom: 40px;
+  color: #fbfbfb;
+  line-height: 1.28571;
 }
 
 .your-order-picture-card-container {
@@ -47,7 +59,6 @@
   color: #fbfbfb;
   display: flex;
   flex-wrap: wrap;
-  max-width: 300px;
   gap: 8px;
 }
 
@@ -62,6 +73,65 @@
 .picture-cotainer-order-list a {
   text-decoration: none;
   color: inherit;
+}
+
+@media screen and (min-width: 768px) {
+  .your-order-picture-card-container {
+    max-width: 628px;
+    padding: 50px;
+  }
+
+  .img-your-order {
+    margin-bottom: 50px;
+  }
+
+  .picture-cotainer-paragraph-follow {
+    font-size: 18px;
+  }
+
+  .picture-cotainer-order-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-size: 32px;
+  }
+
+  .container-your-order {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+
+  .container-your-order-paragraph {
+    margin-bottom: 50px;
+  }
+
+  .title-your-order {
+    font-size: 64px;
+  }
+
+  .container-your-order-paragraph {
+    font-size: 16px;
+  }
+
+  .title-your-order,
+  .container-your-order-paragraph {
+    max-width: 640px;
+    margin-right: auto;
+    margin-left: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .your-order-picture-card-container {
+    max-width: 527px;
+  }
+
+  .title-your-order,
+  .container-your-order-paragraph {
+    max-width: 751px;
+  }
 }
 
 /* Evgen Fedorchenko */
@@ -158,8 +228,8 @@
 @media screen and (min-width: 768px) {
   .your-order-windows {
     justify-content: center;
-    margin-top: 50px;
     gap: 25px;
+    max-width: 628px;
   }
   .your-order-window-input {
     padding: 50px 100px;

@@ -1,6 +1,5 @@
 <section class="section-your-order">
   <div class="container container-your-order">
-  <div class="container container-your-order">
     <h2 class="title-your-order">
       Fresh <span class="title-your-order-exception">Harvest</span> Box has got
       you covered
@@ -11,96 +10,97 @@
       today and start enjoying the best that nature has to offer!
     </p>
     <!-- /Evgen Fedorchenko/ -->
+    <div class="your-order-form-and-picture-container">
+      <!-- Для утворення гепу між формою і картинкою для Laptop адаптації -->
+      <!--Lena Bochan-->
+      <div class="your-order-windows">
+        <div class="your-order-window-input">
+          <p class="order-form-paragraph">
+            Ordering
+            <span class="order-paragraph-exception-first">from us</span> is
+            quick and easy! Fill out
+            <span class="order-paragraph-exception-second">the form</span> below
+            and we will contact you !
+          </p>
+          <form class="form-your-order" action="">
+            <input
+              class="form-order-input"
+              name="user-name"
+              type="text"
+              id="user-name"
+              placeholder="Full Name"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              required
+            />
+            <input
+              class="form-order-input"
+              name="user-email"
+              type="email"
+              id="user-email"
+              placeholder="Email"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              required
+            />
+            <textarea
+              class="form-order-input order-textarea"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Comment"
+            ></textarea>
+          </form>
+          <button class="your-order-button" type="submit">SEND</button>
+        </div>
+      </div>
+      <!--/Lena Bochan/-->
 
-    <!--Lena Bochan-->
-    <div class="your-order-windows">
-      <div class="your-order-window-input">
-        <p class="order-form-paragraph">
-          Ordering
-          <span class="order-paragraph-exception-first">from us</span> is quick
-          and easy! Fill out
-          <span class="order-paragraph-exception-second">the form</span> below
-          and we will contact you !
+      <!-- /Evgen Fedorchenko/ -->
+
+      <div class="your-order-picture-card-container">
+        <div class="your-order-picture-container">
+          <picture class="picture-your-order">
+            <source
+              srcset="
+                /img/your-order/desktop_1x.jpg 1x,
+                /img/your-order/desktop_2x.jpg 2x
+              "
+              media="(min-width: 1024px)"
+            />
+            <source
+              srcset="
+                /img/your-order/tablet_1x.jpg 1x,
+                /img/your-order/tablet_2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                /img/your-order/mobile_1x.jpg 1x,
+                /img/your-order/mobile_2x.jpg 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <!-- Fallback изображение -->
+            <img
+              class="img-your-order"
+              src="/img/your-order/mobile_2x.jpg"
+              alt="Cooking woman"
+            />
+          </picture>
+        </div>
+        <p class="paragraph picture-cotainer-paragraph-follow">
+          Follow us on our social networks:
         </p>
-        <form class="form-your-order" action="">
-          <input
-            class="form-order-input"
-            name="user-name"
-            type="text"
-            id="user-name"
-            placeholder="Full Name"
-            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-            required
-          />
-          <input
-            class="form-order-input"
-            name="user-email"
-            type="email"
-            id="user-email"
-            placeholder="Email"
-            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-            required
-          />
-          <textarea
-            class="form-order-input order-textarea"
-            name="user-comment"
-            id="user-comment"
-            placeholder="Comment"
-          ></textarea>
-        </form>
-        <button class="your-order-button" type="submit">SEND</button>
-      </div>
-    </div>
-    <!--/Lena Bochan/-->
-
-    <!-- /Evgen Fedorchenko/ -->
-
-    <div class="your-order-picture-card-container">
-      <div class="your-order-picture-container">
-        <picture class="picture-your-order">
-          <source
-            srcset="
-              /img/your-order/desktop_1x.jpg 1x,
-              /img/your-order/desktop_2x.jpg 2x
-            "
-            media="(min-width: 1024px)"
-          />
-          <source
-            srcset="
-              /img/your-order/tablet_1x.jpg 1x,
-              /img/your-order/tablet_2x.jpg 2x
-            "
-            media="(min-width: 768px)"
-          />
-          <source
-            srcset="
-              /img/your-order/mobile_1x.jpg 1x,
-              /img/your-order/mobile_2x.jpg 2x
-            "
-            media="(max-width: 767px)"
-          />
-          <!-- Fallback изображение -->
-          <img
-            class="img-your-order"
-            src="/img/your-order/mobile_2x.jpg"
-            alt="Cooking woman"
-          />
-        </picture>
-      </div>
-      <p class="paragraph picture-cotainer-paragraph-follow">
-        Follow us on our social networks:
-      </p>
-      <ul class="picture-cotainer-order-list">
-        <li class="picture-cotainer-order-item">
-          <a href="https://www.instagram.com/goitclub/">instagram</a>
-        </li>
-        <li class="picture-cotainer-order-item">
-          <a href="https://www.facebook.com/goITclub/">facebook</a>
-        </li>
-        <li class="picture-cotainer-order-item">
-          <a href="https://www.youtube.com/c/GoIT">youtube</a>
-        </li>
-      </ul>
+        <ul class="picture-cotainer-order-list">
+          <li class="picture-cotainer-order-item">
+            <a href="https://www.instagram.com/goitclub/">instagram</a>
+          </li>
+          <li class="picture-cotainer-order-item">
+            <a href="https://www.facebook.com/goITclub/">facebook</a>
+          </li>
+          <li class="picture-cotainer-order-item">
+            <a href="https://www.youtube.com/c/GoIT">youtube</a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
