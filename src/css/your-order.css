@@ -1,3 +1,138 @@
 .img-your-order {
-    background:url(/src/img/your-order/mobile_2x.jpg) ;
+  background: url(/src/img/your-order/mobile_2x.jpg);
 }
+/* Lena Bokhan*/
+.container-your-order {
+  background: #7a3145;
+}
+.your-order-windows {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.your-order-window-input {
+  width: 100%;
+  background: #fbfbfb;
+  border-radius: 30px;
+  padding: 40px 20px;
+}
+.order-form-paragraph {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #141414;
+}
+.order-paragraph-exception-first {
+  color: #7a3145;
+}
+.order-paragraph-exception-second {
+  color: #576f35;
+}
+.form-your-order {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.form-order-input {
+  border: 1px solid rgba(20, 20, 20, 0.2);
+  border-radius: 30px;
+  padding-left: 16px;
+  height: 46px;
+  width: 100%;
+  outline: transparent;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: #141414;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-order-input::placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  color: #141414;
+}
+.order-textarea {
+  padding-top: 14px;
+  border-radius: 15px;
+  height: 91px;
+}
+.form-order-input:focus {
+  border-color: #7a3145;
+}
+.form-order-input:not(:placeholder-shown):invalid {
+  border-color: #e74a3b;
+}
+
+.form-order-input:not(:placeholder-shown):valid {
+  border-color: #3cbc81;
+}
+.your-order-button {
+  margin-top: 20px;
+  background: #576f35;
+  border-radius: 30px;
+  width: 100%;
+  height: 50px;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+}
+
+@media screen and (min-width: 768px) {
+  .your-order-windows {
+    justify-content: center;
+    margin-top: 50px;
+    gap: 25px;
+  }
+  .your-order-window-input {
+    padding: 50px 100px;
+  }
+  .form-your-order {
+    margin-top: 50px;
+  }
+  .form-order-input {
+    height: 52px;
+  }
+  .form-order-input::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: #141414;
+  }
+  .order-textarea {
+    padding-top: 16px;
+    height: 95px;
+  }
+  .your-order-button {
+    margin-top: 25px;
+    height: 52px;
+    font-size: 18px;
+    line-height: 1.11;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .your-order-windows {
+    padding-left: 0px;
+    padding-right: 0px;
+    gap: 24px;
+    flex-wrap: nowrap;
+  }
+
+  .your-order-window-input {
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 529px;
+  }
+}
+/*/Lena Bokhan/*/
