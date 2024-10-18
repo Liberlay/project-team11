@@ -109,6 +109,7 @@
 
   .title-your-order {
     font-size: 64px;
+    margin-bottom: 25px;
   }
 
   .container-your-order-paragraph {
@@ -130,7 +131,11 @@
 
   .title-your-order,
   .container-your-order-paragraph {
+    margin-left: 0;
     max-width: 751px;
+  }
+  .title-your-order {
+    margin-bottom: 25px;
   }
 }
 
