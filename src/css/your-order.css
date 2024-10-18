@@ -1,15 +1,81 @@
-.img-your-order {
-  background: url(/src/img/your-order/mobile_2x.jpg);
+/*  Your Order */
+
+/* Evgen Fedorchenko */
+
+.title-your-order {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  margin-bottom: 20px;
 }
+
+.your-order-picture-card-container {
+  display: flex;
+  border-radius: 30px;
+  flex-direction: column;
+  background-color: #4e6e38;
+  width: 100%;
+  padding: 40px 20px;
+}
+
+.img-your-order {
+  margin-bottom: 20px;
+}
+
+.picture-your-order {
+  border-radius: 20px;
+}
+
+.img-your-order {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  display: block;
+}
+
+.picture-cotainer-paragraph-follow {
+  color: #fbfbfb80;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.picture-cotainer-order-list {
+  font-size: 24px;
+  color: #fbfbfb;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 300px;
+  gap: 8px;
+}
+
+.picture-cotainer-order-list li {
+  display: inline;
+}
+
+.picture-cotainer-order-list li:not(:last-child)::after {
+  content: ' / ';
+}
+
+.picture-cotainer-order-list a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Evgen Fedorchenko */
+
 /* Lena Bokhan*/
-.container-your-order {
+.container-your-order,
+.section-your-order {
   background: #7a3145;
 }
 .your-order-windows {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
-  margin-top: 40px;
+  margin-bottom: 20px;
 }
 .your-order-window-input {
   width: 100%;

@@ -49,46 +49,57 @@
         </form>
         <button class="your-order-button" type="submit">SEND</button>
       </div>
-      <!--/Lena Bochan/-->
+    </div>
+    <!--/Lena Bochan/-->
 
-      <!-- /Evgen Fedorchenko/ -->
+    <!-- /Evgen Fedorchenko/ -->
 
+    <div class="your-order-picture-card-container">
       <div class="your-order-picture-container">
-        <picture class="img-your-order">
+        <picture class="picture-your-order">
+          <source
+            srcset="
+              /img/your-order/desktop_1x.jpg 1x,
+              /img/your-order/desktop_2x.jpg 2x
+            "
+            media="(min-width: 1024px)"
+          />
+          <source
+            srcset="
+              /img/your-order/tablet_1x.jpg 1x,
+              /img/your-order/tablet_2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              /img/your-order/mobile_1x.jpg 1x,
+              /img/your-order/mobile_2x.jpg 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <!-- Fallback изображение -->
           <img
-            src="/src/img/your-order/mobile_2x.jpg"
-            srcset="/src/img/your-order/tablet_2x.jpg 2x"
-            alt=""
-          />
-
-          <source
-            srcset="
-              /src/img/your-order/desktop_1x.jpg 1x,
-              /src/img/your-order/desktop_2x.jpg 2x
-            "
-          />
-          <source
-            srcset="
-              /src/img/your-order/tablet_1x.jpg 1x,
-              /src/img/your-order/tablet_2x.jpg 2x
-            "
-          />
-          <source
-            srcset="
-              /src/img/your-order/mobile_1x.jpg 1x,
-              /src/img/your-order/mobile_2x.jpg 2x
-            "
+            class="img-your-order"
+            src="/img/your-order/mobile_2x.jpg"
+            alt="Cooking woman"
           />
         </picture>
-        <p class="paragraph picture-cotainer-paragraph-follow">
-          Follow us on our social networks:
-        </p>
-        <ul class="picture-cotainer-order-list">
-          <li class="picture-cotainer-order-item">instagram</li>
-          <li class="picture-cotainer-order-item">facebook</li>
-          <li class="picture-cotainer-order-item">youtube</li>
-        </ul>
       </div>
+      <p class="paragraph picture-cotainer-paragraph-follow">
+        Follow us on our social networks:
+      </p>
+      <ul class="picture-cotainer-order-list">
+        <li class="picture-cotainer-order-item">
+          <a href="https://www.instagram.com/goitclub/">instagram</a>
+        </li>
+        <li class="picture-cotainer-order-item">
+          <a href="https://www.facebook.com/goITclub/">facebook</a>
+        </li>
+        <li class="picture-cotainer-order-item">
+          <a href="https://www.youtube.com/c/GoIT">youtube</a>
+        </li>
+      </ul>
     </div>
   </div>
 </section>
