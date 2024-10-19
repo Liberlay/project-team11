@@ -61,6 +61,8 @@
 
   .hero .container {
     padding: 238px 28px 50px 100px;
+    margin-right: 0;
+    width: calc(1280px / 2);
   }
 
   .hero-title {
@@ -71,7 +73,7 @@
     background-image: url('/img/hero/desktop_1x.jpg');
     background-size: cover;
     background-position: center;
-    min-width: 50%;
+    min-width: calc(50% + 10px);
     height: 800px;
   }
 }
