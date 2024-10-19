@@ -3,7 +3,10 @@
   width: 100%;
   display: flex;
 }
-
+.page-header-container
+{
+  padding: 20px 20px;
+}
 .menu {
   display: none;
 }
@@ -22,13 +25,10 @@
   width: 168px;
   height: 16px;
   fill: #fbfbfb;
-  margin-top: 4px;
+ 
 }
 
-.page-header {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
+
 
 .mobile-open-btn {
   line-height: 0;
@@ -81,6 +81,7 @@
   letter-spacing: -0.02em;
   text-align: center;
   color: #fbfbfb;
+  transition: all 0.4s linear;
 }
 
 .mobile-menu-list-link:hover,
@@ -110,6 +111,8 @@
 
 .menu-shop-now-btn {
   position: absolute;
+  display: flex;
+    align-items: center;
   bottom: 40px;
   font-weight: 600;
   font-size: 14px;
@@ -122,6 +125,7 @@
   padding: 16px 41px;
   height: 50px;
   background: #7a3145;
+
 }
 
 .menu-shop-now-btn:hover,
@@ -135,6 +139,7 @@
   .container {
     width: 100%;
   }
+  
   .header-logo {
     width: 168px;
     height: 16px;
@@ -144,8 +149,13 @@
 @media screen and (min-width: 768px) {
   .container {
     width: 100%;
+    padding: 32px;
   }
-
+    .page-header .container {
+      padding: 32px;
+    }
+  
+ 
   .mobile-menu {
     position: fixed;
     top: 0;
@@ -160,6 +170,11 @@
     width: 40px;
     height: 40px;
   }
+.menu-shop-now-btn {
+    padding: 16px 32px;
+    height: 52px;
+    font-size: 18px;
+}
 }
 
 @media screen and (min-width: 1280px) {
@@ -169,10 +184,7 @@
   .backdrop {
     display: none;
   }
-  .page-header {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
+ 
   .header-right {
     display: flex;
     align-items: center;
@@ -203,6 +215,7 @@
     letter-spacing: -0.02em;
     text-align: center;
     color: #fbfbfb;
+    transition: all 0.4s linear;
   }
   .menu-item:hover,
   .menu-item:focus {
