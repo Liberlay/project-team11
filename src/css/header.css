@@ -28,10 +28,7 @@
   width: 168px;
   height: 16px;
   fill: #fbfbfb;
-
 }
-
-
 
 .mobile-open-btn {
   line-height: 0;
@@ -51,6 +48,7 @@
   height: 100vh;
   opacity: 0;
   pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .backdrop.is-open {
@@ -68,7 +66,12 @@
   background: #7a3145;
   color: #fbfbfb;
   overflow-y: auto;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(50%);
+  transition: transform 0.4s ease-in-out;
+}
+
+.backdrop.is-open .mobile-menu {
+  transform: translate(0);
 }
 
 .mobile-menu-list-link {
@@ -129,7 +132,6 @@
   padding: 16px 41px;
   height: 50px;
   background: #7a3145;
-
 }
 
 .menu-shop-now-btn:hover,
@@ -139,20 +141,8 @@
   color: #7a3145;
 }
 
-@media screen and (max-width: 767px) {
-  .container {
-    width: 100%;
-  }
-
-  .header-logo {
-    width: 168px;
-    height: 16px;
-  }
-}
-
 @media screen and (min-width: 768px) {
-  .container {
-    width: 100%;
+  .page-header .container {
     padding: 32px;
   }
 
@@ -160,12 +150,16 @@
     padding: 32px;
   }
 
-
   .mobile-menu {
     position: fixed;
     top: 0;
     right: 0;
     width: 351px;
+  }
+
+  .mobile-menu-close-btn {
+    top: 32px;
+    right: 32px;
   }
 
   .mobile-menu-close-btn-icon {
@@ -186,8 +180,8 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .container {
-    width: 100%;
+  .page-header .container {
+    padding: 32px 100px;
   }
 
   .backdrop {
@@ -197,7 +191,7 @@
   .header-right {
     display: flex;
     align-items: center;
-    column-gap: 20px;
+    gap: 20px;
   }
 
   .mobile-menu {
@@ -206,7 +200,7 @@
 
   .menu {
     display: flex;
-    column-gap: 8px;
+    gap: 8px;
   }
 
   .mobile-open-btn {
@@ -216,30 +210,28 @@
   .header-logo {
     width: 194px;
     height: 18px;
-
   }
 
   .menu-item {
+    display: flex;
+    align-items: center;
     border: 1px solid rgba(251, 251, 251, 0.4);
     border-radius: 12px;
-    padding: 12px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: -0.02em;
-    text-align: center;
     color: #fbfbfb;
     transition: all 0.4s linear;
   }
-    .menu-item-link {
-      padding: 12px;
-    }
+  .menu-item-link {
+    padding: 12px;
+  }
 
   .menu-item:hover,
   .menu-item:focus {
     border: 1px solid rgba(251, 251, 251, 0.245);
   }
-
 
   .shop-now-btn {
     display: flex;
@@ -261,5 +253,4 @@
   .shop-now-btn:focus {
     background: #622133;
   }
-
 }
