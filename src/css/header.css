@@ -7,6 +7,7 @@
 .menu {
   display: none;
 }
+
 .shop-now-btn {
   display: none;
 }
@@ -20,7 +21,7 @@
 .header-logo {
   width: 168px;
   height: 16px;
-  fill: #ffffff;
+  fill: #fbfbfb;
   margin-top: 4px;
 }
 
@@ -34,7 +35,7 @@
   border: none;
   background-color: transparent;
   padding: 0;
-  stroke: #ffffff;
+  stroke: #fbfbfb;
 }
 .backdrop {
   position: fixed;
@@ -109,27 +110,25 @@
 
 .menu-shop-now-btn {
   position: absolute;
-  bottom: 20px;
-  font-family: 'Inter Tight', sans-serif;
+  bottom: 40px;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.01em;
   text-transform: uppercase;
-  color: #7a3145;
+  color: #fbfbfb;
   border: 1px solid rgba(251, 251, 251, 0.4);
   border-radius: 30px;
   padding: 16px 41px;
   height: 50px;
-  background: #fbfbfb;
-  margin-bottom: 40px;
+  background: #7a3145;
 }
 
 .menu-shop-now-btn:hover,
 .menu-shop-now-btn:focus {
-  background-color: transparent;
+  background-color: #fbfbfb;
   border: 1px solid rgba(251, 251, 251, 0.2);
-  color: #fbfbfb;
+  color: #7a3145;
 }
 
 @media screen and (max-width: 767px) {
@@ -184,6 +183,7 @@
   }
   .menu {
     display: flex;
+    column-gap: 8px;
   }
   .mobile-open-btn {
     display: none;
@@ -191,20 +191,12 @@
   .header-logo {
     width: 194px;
     height: 18px;
-    margin-right: 397px;
+  
   }
   .menu-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 8px;
-    gap: 8px;
     border: 1px solid rgba(251, 251, 251, 0.4);
     border-radius: 12px;
-
-    width: 114px;
-    height: 44px;
-    
+    padding: 12px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.25;
@@ -221,20 +213,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-    border: 1px solid rgba(251, 251, 251, 0.4);
+    border: none;
     border-radius: 30px;
-
     width: 157px;
     height: 52px;
     background: #7a3145;
     font-weight: 600;
     font-size: 18px;
     line-height: 1.11111;
-    
     text-transform: uppercase;
     color: #fbfbfb;
-   
   }
   .shop-now-btn:hover,
   .shop-now-btn:focus {
