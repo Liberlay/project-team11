@@ -8,6 +8,10 @@ body {
   font-family: 'Inter Tight', sans-serif;
 }
 
+button {
+  transition: 0.4s;
+}
+
 .visually-hidden {
   position: absolute;
   margin: -1px;
