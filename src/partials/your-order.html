@@ -1,5 +1,4 @@
 <section class="section-your-order">
-  <!--Lena Bochan-->
   <div class="container container-your-order">
     <h2 class="title-your-order">
       Fresh <span class="title-your-order-exception">Harvest</span> Box has got
@@ -10,6 +9,9 @@
       anyone looking to eat healthier or support local farmers. Order your box
       today and start enjoying the best that nature has to offer!
     </p>
+    <!-- /Evgen Fedorchenko/ -->
+
+    <!--Lena Bochan-->
     <div class="your-order-windows">
       <div class="your-order-window-input">
         <p class="order-form-paragraph">
@@ -27,7 +29,7 @@
             id="user-name"
             placeholder="Full Name"
             pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-            )required
+            required
           />
           <input
             class="form-order-input"
@@ -36,7 +38,6 @@
             id="user-email"
             placeholder="Email"
             pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-            )
             required
           />
           <textarea
@@ -49,34 +50,54 @@
         <button class="your-order-button" type="submit">SEND</button>
       </div>
       <!--/Lena Bochan/-->
-      <div class="your-order-picture-container">
-        <picture class="img-your-order">
-          <source
-            srcset="
-              /src/img/your-order/desktop_1x.jpg 1x,
-              /src/img/your-order/desktop_2x.jpg 2x
-            "
-          />
-          <source
-            srcset="
-              /src/img/your-order/tablet_1x.jpg 1x,
-              /src/img/your-order/tablet_2x.jpg 2x
-            "
-          />
-          <source
-            srcset="
-              /src/img/your-order/mobile_1x.jpg 1x,
-              /src/img/your-order/mobile_2x.jpg 2x
-            "
-          />
-        </picture>
+
+      <!-- /Evgen Fedorchenko/ -->
+
+      <div class="your-order-picture-card-container">
+        <div class="your-order-picture-container">
+          <picture class="picture-your-order">
+            <source
+              srcset="
+                /img/your-order/desktop_1x.jpg 1x,
+                /img/your-order/desktop_2x.jpg 2x
+              "
+              media="(min-width: 1024px)"
+            />
+            <source
+              srcset="
+                /img/your-order/tablet_1x.jpg 1x,
+                /img/your-order/tablet_2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                /img/your-order/mobile_1x.jpg 1x,
+                /img/your-order/mobile_2x.jpg 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <!-- Fallback изображение -->
+            <img
+              class="img-your-order"
+              src="/img/your-order/mobile_2x.jpg"
+              alt="Cooking woman"
+            />
+          </picture>
+        </div>
         <p class="paragraph picture-cotainer-paragraph-follow">
           Follow us on our social networks:
         </p>
         <ul class="picture-cotainer-order-list">
-          <li class="picture-cotainer-order-item">instagram</li>
-          <li class="picture-cotainer-order-item">facebook</li>
-          <li class="picture-cotainer-order-item">youtube</li>
+          <li class="picture-cotainer-order-item">
+            <a href="https://www.instagram.com/goitclub/">instagram</a>
+          </li>
+          <li class="picture-cotainer-order-item">
+            <a href="https://www.facebook.com/goITclub/">facebook</a>
+          </li>
+          <li class="picture-cotainer-order-item">
+            <a href="https://www.youtube.com/c/GoIT">youtube</a>
+          </li>
         </ul>
       </div>
     </div>

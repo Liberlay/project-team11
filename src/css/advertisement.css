@@ -1,8 +1,6 @@
-
 .advertisement {
     background-color: #FBFBFB;
 }
-
 
 .advertes-p {
     display: flex;
@@ -11,11 +9,9 @@
     font-weight: 600;
     line-height: 1.04167;
     letter-spacing: -0.01em;
-
-text-transform: uppercase;
+    text-transform: uppercase;
 
 }
-
 
 .green-text {
     background-color: #576F35;
@@ -42,7 +38,6 @@ text-transform: uppercase;
         width: 704px;
     }
 }
-
 
 @media screen and (min-width: 1280px) {
 
@@ -72,6 +67,4 @@ text-transform: uppercase;
         display: inline-block;
         padding-left: 16px;
     }
-
 }
-
