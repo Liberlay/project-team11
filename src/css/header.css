@@ -230,7 +230,9 @@
 
   .menu-item:hover,
   .menu-item:focus {
-    border: 1px solid rgba(251, 251, 251, 0.245);
+    outline: 2px solid rgba(251, 251, 251, 0.6);
+    border: none;
+    outline-offset: 3px;
   }
 
   .shop-now-btn {
