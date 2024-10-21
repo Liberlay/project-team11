@@ -28,10 +28,7 @@
   width: 168px;
   height: 16px;
   fill: #fbfbfb;
-
 }
-
-
 
 .mobile-open-btn {
   line-height: 0;
@@ -129,7 +126,6 @@
   padding: 16px 41px;
   height: 50px;
   background: #7a3145;
-
 }
 
 .menu-shop-now-btn:hover,
@@ -159,7 +155,6 @@
   .page-header .container {
     padding: 32px;
   }
-
 
   .mobile-menu {
     position: fixed;
@@ -216,7 +211,6 @@
   .header-logo {
     width: 194px;
     height: 18px;
-
   }
 
   .menu-item {
@@ -231,15 +225,16 @@
     color: #fbfbfb;
     transition: all 0.4s linear;
   }
-    .menu-item-link {
-      padding: 12px;
-    }
+  .menu-item-link {
+    padding: 12px;
+  }
 
   .menu-item:hover,
   .menu-item:focus {
-    border: 1px solid rgba(251, 251, 251, 0.245);
+    outline: 2px solid rgba(251, 251, 251, 0.6);
+    border: none;
+    outline-offset: 3px;
   }
-
 
   .shop-now-btn {
     display: flex;
@@ -261,5 +256,4 @@
   .shop-now-btn:focus {
     background: #622133;
   }
-
 }
