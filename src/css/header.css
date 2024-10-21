@@ -222,18 +222,22 @@
     line-height: 1.25;
     letter-spacing: -0.02em;
     color: #fbfbfb;
-    transition: all 0.4s linear;
+    transition: all 0.18s linear;
   }
   .menu-item-link {
     padding: 12px;
   }
 
-  .menu-item:hover,
-  .menu-item:focus {
-    outline: 2px solid rgba(251, 251, 251, 0.6);
-    border: none;
-    outline-offset: 3px;
-  }
+ .menu-item:hover,
+ .menu-item:focus {
+   outline: 2px solid rgba(251, 251, 251, 0.6);
+   border: none;
+   outline-offset: 3px;
+   background-color: rgba(251, 251, 251, 0.2);
+ 
+   
+   
+ }
 
   .shop-now-btn {
     display: flex;
