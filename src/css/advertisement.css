@@ -1,4 +1,6 @@
 .advertisement {
+    padding-top: 80px;
+    padding-bottom: 80px;
     background-color: #FBFBFB;
 }
 
@@ -27,7 +29,12 @@
 @media screen and (min-width: 768px) {
  
     .advertisement .container {
-        padding: 100px 16px;
+        padding: 0 16px;
+    }
+
+    .advertisement {
+        padding-bottom: 100px;
+        padding-top: 100px;
     }
 
     .advertes-p {
@@ -41,9 +48,6 @@
 
 @media screen and (min-width: 1280px) {
 
-    .advertisement .container {
-        padding: 100px;
-    }
 
     .advertes-p {
         display: inline-block;
