@@ -142,12 +142,10 @@
 
 /* Lena Bokhan*/
 .section-your-order {
+  padding: 80px 0;
   background: #7a3145;
 }
-.container-your-order {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
+
 .your-order-windows {
   display: flex;
   gap: 20px;
@@ -239,9 +237,11 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container-your-order {
-    background: #7a3145;
-    padding: 100px 32px;
+  .section-your-order {
+    padding: 100px 0;
+  }
+  .section-your-order .container {
+    padding: 0 32px;
   }
   .your-order-windows {
     padding-left: 38px;
@@ -292,9 +292,12 @@
     width: 529px;
   }
 
-  .container-your-order {
-    padding-left: 100px;
-    padding-right: 100px;
+  .section-your-order {
+    padding: 100px 0;
+  }
+
+  .section-your-order .container {
+    padding: 0 100px;
   }
 }
 /*/Lena Bokhan/*/
