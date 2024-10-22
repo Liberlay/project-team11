@@ -1,74 +1,80 @@
 .advertisement {
-    padding-top: 80px;
-    padding-bottom: 80px;
-    background-color: #FBFBFB;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #fbfbfb;
+}
+
+.advertisement .container {
+  padding: 0 10px;
 }
 
 .advertes-p {
-    display: flex;
-    flex-direction: column;
-    font-size: 48px;
-    font-weight: 600;
-    line-height: 1.04167;
-    letter-spacing: -0.01em;
-    text-transform: uppercase;
-
+  display: flex;
+  flex-direction: column;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.04167;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
 }
 
 .green-text {
-    background-color: #576F35;
-    color: #FBFBFB;
-    padding: 0 10px;
-    border-radius: 12px;
+  background-color: #576f35;
+  color: #fbfbfb;
+  padding: 0 10px;
+  border-radius: 12px;
 }
 
 .advertes-span-two {
-    padding-left: 10px;
+  padding-left: 10px;
 }
 
 @media screen and (min-width: 768px) {
- 
-    .advertisement .container {
-        padding: 0 16px;
-    }
+  .advertisement {
+    padding: 100px 0;
+  }
 
-    .advertisement {
-        padding-bottom: 100px;
-        padding-top: 100px;
-    }
+  .advertisement .container {
+    padding: 0 16px;
+  }
 
-    .advertes-p {
-        font-size: 64px;
-        font-weight: 600;
-        line-height: 1.09;
-        letter-spacing: -0.01em;
-        width: 704px;
-    }
+  .advertisement {
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
+
+  .advertes-p {
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 1.09;
+    letter-spacing: -0.01em;
+    width: 704px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
+  .advertisement .container {
+    padding: 0 100px;
+  }
+  .advertes-p {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 76px;
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    width: 1080px;
+  }
 
+  .advertes-span-two {
+    padding-left: 0px;
+  }
 
-    .advertes-p {
-        display: inline-block;
-        font-weight: 600;
-        font-size: 76px;
-        line-height: 1.05;
-        letter-spacing: -0.01em;
-        width: 1080px;
-    }
+  .green-text {
+    padding-left: 16px;
+  }
 
-
-    .advertes-span-two {
-        padding-left: 0px;
-    }
-
-    .green-text {
-        padding-left: 16px;
-    }
-
-    .adverstes-span-three {
-        display: inline-block;
-        padding-left: 16px;
-    }
+  .adverstes-span-three {
+    display: inline-block;
+    padding-left: 16px;
+  }
 }
