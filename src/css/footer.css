@@ -43,14 +43,14 @@
 }
 
 .anchor-link,
-.address-contacts-one {
+.address-contacts {
   transition: opacity 0.2s ease-in-out;
 }
 
 .anchor-link:hover,
 .anchor-link:focus,
-.address-contacts-one:hover,
-.address-contacts-one:focus {
+.address-contacts:hover,
+.address-contacts:focus {
   opacity: 0.5;
 }
 
@@ -208,6 +208,10 @@
   }
 
   .footer-logo:hover {
+    cursor: pointer;
+  }
+
+  .address-contacts {
     cursor: pointer;
   }
 
